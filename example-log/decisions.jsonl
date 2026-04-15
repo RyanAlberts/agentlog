@@ -1,0 +1,3 @@
+{"id": "20260415-213045", "timestamp": "2026-04-15T21:30:45", "text": "Chose DynamoDB over Postgres for session store \u2014 need <10ms at 10K RPS", "tags": ["database", "performance", "infrastructure"]}
+{"id": "20260416-091522", "timestamp": "2026-04-16T09:15:22", "text": "Decided to use Anthropic Claude 3.5 Sonnet for the main reasoning engine due to better instruction following and context window.", "tags": ["llm", "architecture"]}
+{"id": "20260418-144210", "timestamp": "2026-04-18T14:42:10", "text": "Switched from JSON to JSONL for the decision log format. JSON requires loading the whole file to append, JSONL is just an append operation.", "tags": ["storage", "optimization"]}
