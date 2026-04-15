@@ -29,7 +29,7 @@ That's it. Decisions are stored as JSONL (one per line, grep-friendly, version-c
 pip install anthropic  # or: pip install google-generativeai
 export ANTHROPIC_API_KEY="sk-..."  # or: export GEMINI_API_KEY="..."
 
-git clone https://github.com/YOUR_USERNAME/agentlog.git
+git clone https://github.com/RyanAlberts/agentlog.git
 cd agentlog
 python agentlog.py remember "First decision logged"
 ```
