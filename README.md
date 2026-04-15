@@ -11,8 +11,11 @@ Every team has a "why did we decide this?" problem. Decisions live in Slack thre
 ## The fix
 
 ```bash
-# Store a decision
+# Store a decision directly
 agentlog remember "Chose DynamoDB over Postgres for session store — need <10ms at 10K RPS"
+
+# Or use AI to summarize a decision from a file (e.g., using Simon Willison's 'llm' CLI)
+agentlog remember "$(llm 'Summarize the key architectural decision made here' < meeting-notes.txt)"
 
 # Retrieve relevant decisions
 agentlog recall "database choices"

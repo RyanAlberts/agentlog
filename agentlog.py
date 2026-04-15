@@ -10,6 +10,7 @@ Three commands:
 
 Usage:
   python agentlog.py remember "Chose DynamoDB over Postgres for session store — need <10ms at 10K RPS"
+  python agentlog.py remember "$(llm 'Summarize the database decision made here' < meeting-notes.txt)"
   python agentlog.py recall "database choices"
   python agentlog.py reflect
   python agentlog.py recall "database choices" --model gemini  # use Gemini instead
@@ -226,6 +227,7 @@ def main():
         epilog="""
 Examples:
   agentlog remember "Chose DynamoDB over Postgres — need <10ms latency at 10K RPS"
+  agentlog remember "$(llm 'Summarize the database decision made here' < meeting-notes.txt)"
   agentlog remember "Shipping eval suite before GA — learned from last launch" --tags launch,evals
   agentlog recall "database choices"
   agentlog recall "what did we decide about the API?" --model gemini
