@@ -29,13 +29,15 @@ That's it. Decisions are stored as JSONL (one per line, grep-friendly, version-c
 ## Install
 
 ```bash
-pip install agentlog
+pip install agentlog-cli
 export ANTHROPIC_API_KEY="sk-..."   # or: export GEMINI_API_KEY="..."
 
 agentlog remember "First decision logged"
 ```
 
 That's it — Anthropic and Gemini SDKs are pulled in as dependencies, so a single `pip install` covers both providers.
+
+> **Why `agentlog-cli`, not `agentlog`?** PyPI flagged the bare name `agentlog` as confusable with an unrelated logging package. The module, CLI binary, and GitHub repo are still `agentlog` — only the `pip install` target differs (same pattern as `pillow`/`PIL`, `beautifulsoup4`/`bs4`).
 
 <details>
 <summary>Run from source (for hacking on it)</summary>
