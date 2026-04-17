@@ -85,4 +85,4 @@ Read [DECISIONS.md](./DECISIONS.md) for the full rationale. The short version:
 
 ---
 
-Built by [Ryan](https://linkedin.com/in/YOUR_PROFILE) — Staff PM working in Agentic AI.
+Built by [Ryan Alberts](https://github.com/RyanAlberts) — Staff PM working in Agentic AI.
