@@ -1,5 +1,9 @@
 # agentlog
 
+[![PyPI](https://img.shields.io/pypi/v/agentlog-cli.svg?label=pypi%20%28agentlog-cli%29)](https://pypi.org/project/agentlog-cli/)
+[![Python versions](https://img.shields.io/pypi/pyversions/agentlog-cli.svg)](https://pypi.org/project/agentlog-cli/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](./LICENSE)
+
 **Persistent decision memory for any project.** Three commands. One file. Zero frameworks.
 
 Inspired by [Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) — which proved that the best knowledge system is just well-structured text that an LLM maintains for you. This is that idea, shipped as a CLI you can install in 30 seconds.
