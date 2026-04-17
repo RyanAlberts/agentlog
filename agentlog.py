@@ -25,6 +25,8 @@ from pathlib import Path
 
 # --- Configuration ---
 
+__version__ = "0.1.0"
+
 AGENTLOG_DIR = Path(os.environ.get("AGENTLOG_DIR", ".agentlog"))
 DECISIONS_FILE = AGENTLOG_DIR / "decisions.jsonl"
 REFLECTIONS_FILE = AGENTLOG_DIR / "reflections.md"

@@ -1,0 +1,22 @@
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Project state
+.agentlog/
+.env

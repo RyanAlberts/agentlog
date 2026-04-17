@@ -29,20 +29,25 @@ That's it. Decisions are stored as JSONL (one per line, grep-friendly, version-c
 ## Install
 
 ```bash
-pip install anthropic  # or: pip install google-generativeai
-export ANTHROPIC_API_KEY="sk-..."  # or: export GEMINI_API_KEY="..."
+pip install agentlog
+export ANTHROPIC_API_KEY="sk-..."   # or: export GEMINI_API_KEY="..."
 
+agentlog remember "First decision logged"
+```
+
+That's it — Anthropic and Gemini SDKs are pulled in as dependencies, so a single `pip install` covers both providers.
+
+<details>
+<summary>Run from source (for hacking on it)</summary>
+
+```bash
 git clone https://github.com/RyanAlberts/agentlog.git
 cd agentlog
-python agentlog.py remember "First decision logged"
+pip install -e .
+agentlog remember "First decision logged"
 ```
 
-Or add it to any existing project:
-```bash
-cp agentlog.py your-project/
-cd your-project
-python agentlog.py remember "Starting the decision log for this project"
-```
+</details>
 
 ## How it works
 
