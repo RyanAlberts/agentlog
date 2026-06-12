@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [
-    { name = "Ryan Alexander Alberts", email = "25306145+RyanAlberts@users.noreply.github.com" }
+    { name = "Ryan Alexander Alberts" }
 ]
 keywords = [
     "llm",
